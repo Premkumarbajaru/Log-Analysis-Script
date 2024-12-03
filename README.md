@@ -1,1 +1,1 @@
-# Log-Analysis-Script
+# VRV Security’s Python Intern Assignment
