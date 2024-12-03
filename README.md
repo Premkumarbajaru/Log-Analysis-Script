@@ -10,6 +10,22 @@ The Python script implements the following functionalities:
 Parse the provided log file to extract all IP addresses.
 Calculate the number of requests made by each IP address.
 Sort and display the results in descending order of request counts.
+Count Requests per IP Address:
+``` bash
+    IP Address           Request Count
+    192.168.1.1          69
+    203.0.113.5          8
+    198.51.100.23        8
+    10.0.0.2             6
+    192.168.1.100        5
+
+IP Address         Request Count
+203.0.113.5        8
+198.51.100.23      8
+192.168.1.1        7
+10.0.0.2           6
+192.168.1.100      5
+```
 
 ### 2)Identify the Most Frequently Accessed Endpoint:
 Extract the endpoints (e.g., URLs or resource paths) from the log file.
