@@ -1,17 +1,5 @@
 # VRV Security’s Python Intern Assignment
 
-This repository contains a Python script designed to analyze log files and extract key information related to IP requests, most frequently accessed endpoints, and suspicious activity such as excessive failed login attempts. The script processes the log data, displays the results in the terminal, and saves them to a CSV file for further analysis.
-
-## Table of Contents
-
-- [Objective](#objective)
-- [Features](#features)
-- [Requirements](#requirements)
-- [How to Run](#how-to-run)
-- [Output](#output)
-- [Sample Log File](#sample-log-file)
-- [Contributing](#contributing)
-
 ## Objective
 
 The primary goal of this script is to:
