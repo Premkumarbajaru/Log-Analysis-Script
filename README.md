@@ -2,6 +2,7 @@
 
 ## Objective
 The goal of this assignment is to assess the ability to write a Python script that processes log files to extract and analyze key information. This assignment evaluates proficiency in file handling, string manipulation, and data analysis, which are essential skills for cybersecurity-related programming tasks.
+![Screenshot (1)](https://github.com/user-attachments/assets/1c10b29a-e603-4953-bdd5-a61aeb36b1be)
 
 ## Core Requirements
 The Python script implements the following functionalities:
