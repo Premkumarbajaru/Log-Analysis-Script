@@ -41,9 +41,9 @@ bash
 
 
 ## Getting Started
-### Prerequisites
-#### Python 3.10.0
-#### re module (standard library)
-#### csv module (standard library)
-#### collections module (standard library)
+Prerequisites
+Python 3.10.0
+re module (standard library)
+csv module (standard library)
+collections module (standard library)
 
