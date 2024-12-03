@@ -23,7 +23,7 @@ Flagging IP addresses with failed login attempts exceeding a configurable thresh
 Display the flagged IP addresses and their failed login counts.
 
 ## Output Results:
-https://github.com/Premkumarbajaru/Log-Analysis-Script/blob/88a6eb56e51d97e9181608a9046463138f2bd8ef/log_analysis_results.csv#L1
+https://github.com/Premkumarbajaru/Log-Analysis-Script/blob/88a6eb56e51d97e9181608a9046463138f2bd8ef/log_analysis_results.csv?plain=1#L1
 
 Display the results in a clear, organized format in the terminal.
 Save the results to a CSV file named log_analysis_results.csv with the following structure:
