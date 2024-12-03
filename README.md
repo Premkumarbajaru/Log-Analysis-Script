@@ -1,28 +1,28 @@
 # VRV Security’s Python Intern Assignment
 
-##Objective
+## Objective
 The goal of this assignment is to assess the ability to write a Python script that processes log files to extract and analyze key information. This assignment evaluates proficiency in file handling, string manipulation, and data analysis, which are essential skills for cybersecurity-related programming tasks.
 
-##Core Requirements
+## Core Requirements
 The Python script implements the following functionalities:
 
-###1)Count Requests per IP Address:
+### 1)Count Requests per IP Address:
 Parse the provided log file to extract all IP addresses.
 Calculate the number of requests made by each IP address.
 Sort and display the results in descending order of request counts.
 
-###2)Identify the Most Frequently Accessed Endpoint:
+### 2)Identify the Most Frequently Accessed Endpoint:
 Extract the endpoints (e.g., URLs or resource paths) from the log file.
 Identify the endpoint accessed the highest number of times.
 Provide the endpoint name and its access count.
 
-###3)Detect Suspicious Activity:
+### 3)Detect Suspicious Activity:
 Identify potential brute force login attempts by:
 Searching for log entries with failed login attempts (e.g., HTTP status code 401 or a specific failure message like "Invalid credentials").
 Flagging IP addresses with failed login attempts exceeding a configurable threshold (default: 10 attempts).
 Display the flagged IP addresses and their failed login counts.
 
-Output Results:
+## Output Results:
 
 Display the results in a clear, organized format in the terminal.
 Save the results to a CSV file named log_analysis_results.csv with the following structure:
@@ -40,14 +40,14 @@ bash
 ...
 
 
-##Getting Started
-###Prerequisites
+## Getting Started
+### Prerequisites
 Python 3.10.0
 re module (standard library)
 csv module (standard library)
 collections module (standard library)
 
-Installation
+## Installation
 Clone the repository:
 
 bash
@@ -60,7 +60,7 @@ python --version
 Usage
 Place your log file in the same directory as the script and name it sample.log.
 
-Run the script:
+## Run the script:
 
 bash
 python log_analysis.py
