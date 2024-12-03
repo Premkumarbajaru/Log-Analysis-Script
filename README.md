@@ -24,6 +24,7 @@ Display the flagged IP addresses and their failed login counts.
 
 ## Output Results:
 <script src="https://gist.github.com/Premkumarbajaru/3d958f260fe5548bbc80bb7db6654a48.js"></script>
+https://gist.github.com/Premkumarbajaru/3d958f260fe5548bbc80bb7db6654a48
 the results in a clear, organized format in the terminal.
 Save the results to a CSV file named log_analysis_results.csv with the following structure:
 
