@@ -35,11 +35,6 @@ Suspicious Activity: Columns: IP Address, Failed Login Count
 Sample Log File
 A sample log file named sample.log is provided for testing the script. The log file contains entries similar to the following:
 
-bash
-192.168.1.1 - - [03/Dec/2024:10:12:34 +0000] "GET /home HTTP/1.1" 200 512
-203.0.113.5 - - [03/Dec/2024:10:12:35 +0000] "POST /login HTTP/1.1" 401 128 "Invalid credentials"
-...
-
 
 ## Getting Started
 Prerequisites
