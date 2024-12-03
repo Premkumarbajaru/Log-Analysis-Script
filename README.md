@@ -14,7 +14,7 @@ Sort and display the results in descending order of request counts.
 ### 2)Identify the Most Frequently Accessed Endpoint:
 Extract the endpoints (e.g., URLs or resource paths) from the log file.
 Identify the endpoint accessed the highest number of times.
-Provide the endpoint name and its access count.
+
 
 ### 3)Detect Suspicious Activity:
 Identify potential brute force login attempts by:
@@ -23,8 +23,6 @@ Flagging IP addresses with failed login attempts exceeding a configurable thresh
 Display the flagged IP addresses and their failed login counts.
 
 ## Output Results:
-(<script src=("https://gist.github.com/Premkumarbajaru/3d958f260fe5548bbc80bb7db6654a48.js")></script>)
-(https://gist.github.com/Premkumarbajaru/3d958f260fe5548bbc80bb7db6654a48)
 the results in a clear, organized format in the terminal.
 Save the results to a CSV file named log_analysis_results.csv with the following structure:
 
