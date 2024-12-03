@@ -1,59 +1,117 @@
 # VRV Security’s Python Intern Assignment
 
+This repository contains a Python script designed to analyze log files and extract key information related to IP requests, most frequently accessed endpoints, and suspicious activity such as excessive failed login attempts. The script processes the log data, displays the results in the terminal, and saves them to a CSV file for further analysis.
+
+## Table of Contents
+
+- [Objective](#objective)
+- [Features](#features)
+- [Requirements](#requirements)
+- [How to Run](#how-to-run)
+- [Output](#output)
+- [Sample Log File](#sample-log-file)
+- [Contributing](#contributing)
+
 ## Objective
-The goal of this assignment is to assess the ability to write a Python script that processes log files to extract and analyze key information. This assignment evaluates proficiency in file handling, string manipulation, and data analysis, which are essential skills for cybersecurity-related programming tasks.
 
-## Core Requirements
-The Python script implements the following functionalities:
+The primary goal of this script is to:
+1. Count the number of requests made by each IP address.
+2. Identify the most frequently accessed endpoint.
+3. Detect suspicious activity, such as excessive failed login attempts.
 
-### 1)Count Requests per IP Address:
-Parse the provided log file to extract all IP addresses.
-Calculate the number of requests made by each IP address.
-Sort and display the results in descending order of request counts.
-Count Requests per IP Address:
-``` bash
-    IP Address           Request Count
-    192.168.1.1          69
-    203.0.113.5          8
-    198.51.100.23        8
-    10.0.0.2             6
-    192.168.1.100        5
+## Features
 
-IP Address         Request Count
-203.0.113.5        8
-198.51.100.23      8
-192.168.1.1        7
-10.0.0.2           6
-192.168.1.100      5
+1. **Requests per IP Address**:
+   - Lists the number of requests made by each IP address.
+   - Sorts the results in descending order of request counts.
+
+2. **Most Accessed Endpoint**:
+   - Identifies the endpoint (URL or resource path) that was accessed the most number of times.
+
+3. **Suspicious Activity**:
+   - Flags IP addresses with suspicious behavior, such as excessive failed login attempts.
+   - Uses a configurable threshold (default: 10 failed login attempts) to detect suspicious activity.
+
+## Requirements
+
+- Python 3.10.0 or higher
+- `re` module (standard library)
+- `csv` module (standard library)
+- `collections` module (standard library)
+
+## How to Run
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/vrv-security-log-analysis.git
+   cd vrv-security-log-analysis
+   ```
+
+2. **Place the Log File**:
+   - Ensure the `sample.log` file is in the same directory as the script.
+
+3. **Run the Script**:
+   ```bash
+   python log_analysis.py
+   ```
+
+## Output
+
+The script will display the analysis results in the terminal and save them to a CSV file named `log_analysis_results.csv`.
+
+### Terminal Output Example
+
+```plaintext
+Requests per IP Address:
+203.0.113.5          8
+198.51.100.23        8
+192.168.1.1          7
+10.0.0.2             6
+192.168.1.100        5
+
+Most Frequently Accessed Endpoint:
+/login (Accessed 13 times)
+
+Suspicious Activity Detected:
+No suspicious activity detected.
 ```
 
-### 2)Identify the Most Frequently Accessed Endpoint:
-Extract the endpoints (e.g., URLs or resource paths) from the log file.
-Identify the endpoint accessed the highest number of times.
+### CSV File Structure
 
+The CSV file will have the following structure:
 
-### 3)Detect Suspicious Activity:
-Identify potential brute force login attempts by:
-Searching for log entries with failed login attempts (e.g., HTTP status code 401 or a specific failure message like "Invalid credentials").
-Flagging IP addresses with failed login attempts exceeding a configurable threshold (default: 10 attempts).
-Display the flagged IP addresses and their failed login counts.
+```plaintext
+Count Requests per IP Address:
+IP Address,Request Count
+203.0.113.5,8
+198.51.100.23,8
+192.168.1.1,7
+10.0.0.2,6
+192.168.1.100,5
 
-## Output Results:
-the results in a clear, organized format in the terminal.
-Save the results to a CSV file named log_analysis_results.csv with the following structure:
+Most Accessed Frequently Endpoint:
+Endpoint,Access Count
+/login,13
 
-Requests per IP: Columns: IP Address, Request Count
-Most Accessed Endpoint: Columns: Endpoint, Access Count
-Suspicious Activity: Columns: IP Address, Failed Login Count
+Suspicious Activity:
+IP Address,Failed Login Attempts
+```
 
-Sample Log File
-A sample log file named sample.log is provided for testing the script. The log file contains entries similar to the following:
+## Sample Log File
 
+A sample log file named `sample.log` is provided for testing the script. The log file contains entries similar to the following:
 
-## Getting Started
-Prerequisites
-Python 3.10.0
-re module (standard library)
-csv module (standard library)
-collections module (standard library)
+```plaintext
+192.168.1.1 - - [03/Dec/2024:10:12:34 +0000] "GET /home HTTP/1.1" 200 512
+203.0.113.5 - - [03/Dec/2024:10:12:35 +0000] "POST /login HTTP/1.1" 401 128 "Invalid credentials"
+10.0.0.2 - - [03/Dec/2024:10:12:36 +0000] "GET /about HTTP/1.1" 200 256
+...
+```
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or bug fixes.
+
+---
+
+This README provides a clear and concise guide to understanding and running the VRV Security Log Analysis Script. It covers the objectives, features, requirements, how to run the script, expected output, and a sample log file for testing.
