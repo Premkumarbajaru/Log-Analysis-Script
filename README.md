@@ -91,14 +91,14 @@ IP Address        Request Count
 ```plaintext
 Most Accessed Frequently Endpoint:
 Endpoint      Access Count
-/login        13
-/home         5
-/about        5
-/dashboard    3
-/contact,2
-/register,2
-/profile,2
-/feedback,2
+login        13
+home         5
+about        5
+dashboard    3
+contact      2
+register     2
+profile      2
+feedback     2
 ```
 
 ```plaintext
