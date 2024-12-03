@@ -32,6 +32,7 @@ The primary goal of this script is to:
 1. **Clone the Repository**:
    ```bash
    https://github.com/Premkumarbajaru/Log-Analysis-Script.git
+   
    cd log_analysis
    ```
 
