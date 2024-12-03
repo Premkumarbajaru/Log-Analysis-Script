@@ -47,22 +47,3 @@ re module (standard library)
 csv module (standard library)
 collections module (standard library)
 
-## Installation
-Clone the repository:
-
-bash
-git clone https://github.com/yourusername/vrv-security-log-analysis.git
-cd vrv-security-log-analysis
-Ensure you have Python installed:
-
-bash
-python --version
-Usage
-Place your log file in the same directory as the script and name it sample.log.
-
-## Run the script:
-
-bash
-python log_analysis.py
-The script will output the results in the terminal and save them to log_analysis_results.csv.
-
