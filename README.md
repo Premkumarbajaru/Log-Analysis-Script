@@ -60,14 +60,14 @@ IP Address      Request Count
 192.168.1.100   5
 
 Most Frequently Accessed Endpoints:
-/login (Accessed 13 times)
-/home (Accessed 5 times)
-/about (Accessed 5 times)
-/dashboard (Accessed 3 times)
-/contact (Accessed 2 times)
-/register (Accessed 2 times)
-/profile (Accessed 2 times)
-/feedback (Accessed 2 times)
+login (Accessed 13 times)
+home (Accessed 5 times)
+about (Accessed 5 times)
+dashboard (Accessed 3 times)
+contact (Accessed 2 times)
+register (Accessed 2 times)
+profile (Accessed 2 times)
+feedback (Accessed 2 times)
 
 Suspicious Activity Detected:
 IP Address      Failed Login Attempts
