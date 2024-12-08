@@ -112,4 +112,4 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 
 ---
 
-This README provides a clear and concise guide to understanding and running the VRV Security Log Analysis Script. It covers the objectives, features, requirements, how to run the script, expected output, and a sample log file for testing.
+This README provides a clear and concise guide to understanding and running the VRV Security Log Analysis Script. It covers the objectives, features, requirements, how to run the script, output, CSV File Structure and a sample log file for testing.
